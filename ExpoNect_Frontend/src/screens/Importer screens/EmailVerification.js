@@ -89,9 +89,10 @@ const EmailVerification = ({ navigation, route }) => {
       });
 
       const res = await verifyEmail(val, profile.id);
-      console.log(res);
+      // console.log(profile);
+      // if (!res.success) return console.log(res.error);
 
-      navigation.dispatch(StackActions.replace("SignInScreen"));
+      navigation.dispatch(StackActions.replace("SignInScreen", res.importers));
     }
   };
 

@@ -61,8 +61,9 @@ const MenuScreen = ({ navigation }) => {
         </TouchableRipple> */}
         <View style={{ flexDirection: "row", marginTop: 15 }}>
           <Avatar.Image
-            source={require("../../../../assets/avocado.png")}
+            // source={require("../../../../assets/avocado.png")}
             size={80}
+            backgroundColor={" "}
           />
           <View style={{ marginLeft: 20 }}>
             <Title
